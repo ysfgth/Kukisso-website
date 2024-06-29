@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Ballet' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Beau Rivage' rel='stylesheet'>
+
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Georgia; margin: 0; color: #2F3645; background-color: #EEEDEB;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        .ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+	    Z-index: 1000;
+            display: flex;
+            justify-content: center;
+	    background-color: #EEEDEB; 
+        }
+
+        li a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+        li a, .dropbtn {
+            display: block;
+            color: #2F3645;
+            text-align: center;
+            padding: 18px 16px;
+            text-decoration: none;
+        }
+
+        li.dropdown {
+            display: relative;
+        }
+
+        .ul1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+	    font-size: 13px;
+        }
+
+	.li1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+	}
+
+        .li1 a {
+            color: White;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .li1 a:hover:not(.active) {
+            text-decoration: underline;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: sticky;
+            background-color: #EEEDEB;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #2F3645;
+            padding: 10px 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #EEEDEB;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+	.button {
+ 	    background-color: #939185;
+ 	    border: none;
+ 	    color: white;
+ 	    padding: 15px 32px;
+  	    text-align: center;
+ 	    text-decoration: none;
+ 	    display: inline-block;
+ 	    font-size: 16px;
+ 	    margin: 4px 2px;
+  	    cursor: pointer;
+	    border-radius: 12px;
+	    transition-duration: 0.4s;
+        }
+
+	.button:hover {
+  	    background-color: #E6B9A6; 
+  	    color: #2F3645; 
+	}
+
+        footer {
+            background-color: #939185;
+            padding: 10px;
+	    letter-spacing: 5px;
+            color: White;
+        }
+
+	.gallery {
+ 	    margin: 5px;
+	    border: 1px solid #ccc;
+  	    float: left;
+ 	    width: 180px;
+	}
+
+	.gallery:hover {
+ 	    border: 1px solid #777;
+	}
+
+	.gallery img {
+ 	    width: 100%;
+  	    height: auto;
+	}	
+
+	.desc a {
+	    text-decoration: none;
+	    color: #2F3645;
+	}
+
+	.desc a:hover:not(.active) {
+            text-decoration: underline;
+	}
+
+    </style> 
+</head>
+
+<body>
+
+<center><p style="color: #987070;">Baked Fresh Everyday. Nationwide Shipping</p></center>
+<hr>
+
+    <div>
+        <center>
+	    <img src="Kukisso logo transparent.png" style="width:30%; height: 20%; margin-top: 20px;"
+        </center>
+    </div>
+
+    <ul class="ul">
+        <center>
+            <li style="float: left"><a href="index.html">Home</a></li>
+            <li class="dropdown" style="float: left">
+                <a href="javascript:void(0)" class="dropbtn">Shop</a>
+                <div class="dropdown-content">
+                    <a href="PRODUCTS.html">Our Products</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                </div>
+            </li>
+            <li style="float: left"><a href="CONTACT.html">Contact</a></li>
+            <li style="float: left"><a href="ABOUT.html">About</a></li>
+        </center>
+    </ul>
+
+	<div>
+   	  <center>
+	    <p style="font-family: Ballet; letter-spacing: 5px; font-size: 40px; margin-bottom: -10px; color: #987070;"><b>Cookie Shop</b></p>
+   	    <p style="font-family: Beau Rivage; letter-spacing: 3px; font-size: 20px;  color: #987070; margin-right: 250px; margin-left: 250px;">Introducing our newest improvised products. Our products available in 3 unique and interesting ingredients. Kukisso provide variety of cookies that suitable for everyone; normal person, pregnancy woman and person who are in a diet!</p>
+	  </center>
+	</div>
+
+<section>
+<div style="margin-left: 300px; margin-top: 50px;">
+<div class="gallery" style="margin-right: 50px;">
+    <img src="Cookies.jpg" alt="Kukisso Delicate Cravings" width="600" height="400">
+  </a>
+  <center><div class="desc" style="margin: 20px;"><a href="#">Kukisso Delicate Cravings</a></div></center>
+  <div><center><a href="#" class="button" style="text-decoration: none; margin-bottom: 20px;">Add to cart</a></center></div>
+</div>
+
+<div class="gallery" style="margin-right: 50px;">
+    <img src="Cookies.jpg" alt="Kukisso Nurture" width="600" height="400">
+  </a>
+  <center><div class="desc" style="margin: 20px;"><a href="#">Kukisso Nurture</div></center>
+  <div><center><a href="#" class="button" style="text-decoration: none; margin-bottom: 20px;">Add to cart</a></center></div>
+</div>
+
+<div class="gallery">
+    <img src="Cookies.jpg" alt="Kukisso Blissful Nutty" width="600" height="400">
+  </a>
+  <center><div class="desc" style="margin: 20px;"><a href="#">Kukisso Blissful Nutty</a></div></center>
+  <div><center><a href="#" class="button" style="text-decoration: none; margin-bottom: 20px;">Add to cart</a></center></div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<section style="margin-bottom:50px;">
+	<div style="float: left;">
+	 <p style="font-family: Ballet; font-size: 20px; margin: 20px; margin-left: 100px; margin-right: 100px;">Company</p> 
+	  <ul class="ul1">
+            <li class="li1"><a href="ABOUT.html">About Us</a></li>
+	  </ul>
+	</div>
+
+	<div style="float: left;">
+	 <p style="font-family: Ballet; font-size: 20px; margin: 20px; margin-left: 200px; margin-right: 200px;">Policies</p> 
+	  <ul class="ul1">
+            <li class="li1"><a href="#">Refund Policy</a></li>
+            <li class="li1"><a href="#">Privacy Policy</a></li>
+            <li class="li1"><a href="#">Shipping Policy</a></li>
+            <li class="li1"><a href="#">FAQ</a></li>
+            <li class="li1"><a href="#">Terms of Service</a></li>
+            <li class="li1"><a href="CONTACT.html">Contact Us</a></li>
+	  </ul>
+	</div>
+
+	<div style="float: left;">
+	 <p style="font-family: Ballet; font-size: 20px; margin: 20px; margin-left: 100px; margin-right: 100px;">Kukisso Sdn Bhd</p> 
+	</div>
+
+</section>
+<hr>
+</footer>
+</body>
+</html>
